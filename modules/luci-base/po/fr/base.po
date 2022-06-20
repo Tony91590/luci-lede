@@ -3499,7 +3499,7 @@ msgstr "Nom d'hôte à envoyer dans une requête DHCP"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:257
 msgid "Hostnames"
-msgstr "Noms d'hôtes"
+msgstr "Noms des hôtes"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:550
 msgid ""
