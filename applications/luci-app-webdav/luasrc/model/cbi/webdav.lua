@@ -8,13 +8,12 @@ function sync_value_to_file(value, file)
 	if value ~= old_value then
 		nixio.fs.writefile(file, value)
 	end
-          os.execute("/etc/init.d/webdav start >/dev/null")
-	
+	os.execute("/etc/init.d/webdav start >/dev/null")
 end
 
 m = Map("webdav")
 m.title	= translate("Webdav")
-m.description = translate("Simple Webdav  Project Address https://github.com/hacdias/webdav.")
+m.description = translate("Simple Webdav")
 
 m:section(SimpleSection).template  = "webdav/webdav_status"
 
@@ -22,7 +21,8 @@ s = m:section(TypedSection, "webdav")
 s.addremove = false
 s.anonymous = true
 
-view_enable = s:option(Flag,"enabled",translate("Enable"))
+view_enable = s:option(Flag, "enabled", translate("Enable"))
+
 view_cfg = s:option(TextValue, "1", nil)
 	view_cfg.rmempty = false
 	view_cfg.rows = 43
@@ -31,7 +31,7 @@ view_cfg = s:option(TextValue, "1", nil)
 		return nixio.fs.readfile("/etc/webdav/webdav.yaml") or ""
 	end
 
-          function view_cfg.write(self, section, value)
+	function view_cfg.write(self, section, value)
 		sync_value_to_file(value, "/etc/webdav/webdav.yaml")
 	end
 
