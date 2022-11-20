@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-START=15
+START=50
 
 NAME="cpufreq"
 
