@@ -634,7 +634,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/overview.lua:94
 msgid "Overview"
-msgstr "Vue d'ensemble"
+msgstr "Aperçu"
 
 #: applications/luci-app-ddns/luasrc/model/cbi/ddns/detail.lua:1233
 msgid "PROXY-Server"
