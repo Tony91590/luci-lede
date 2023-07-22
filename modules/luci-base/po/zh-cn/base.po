@@ -257,20 +257,14 @@ msgstr "额外的 HOSTS 文件"
 msgid "Disable IPv6 DNS forwards"
 msgstr "禁止解析 IPv6 DNS 记录"
 
+msgid "Disable IPv4 DNS forwards"
+msgstr "禁止解析 IPv4 DNS 记录"
+
 msgid "Filter IPv6(AAAA) DNS Query Name Resolve"
 msgstr "过滤掉 IPv6(AAAA) ，只返回 IPv4 DNS 域名记录"
 
-msgid "Disable HTTPS DNS Type forwards"
-msgstr "禁止解析 HTTPS 类型的记录"
-
-msgid "Filter HTTPS DNS Query Type Name Resolve"
-msgstr "过滤掉 HTTPS 类型65的查询 ，避免iOS设备绕过常规DNS服务"
-
-msgid "Disable Unknown DNS Type forwards"
-msgstr "禁止解析 Unknown 类型的记录"
-
-msgid "Filter Unknown DNS Query Type Name Resolve"
-msgstr "过滤掉 Unknown 未知类型的查询"
+msgid "Filter IPv4(A) DNS Query Name Resolve"
+msgstr "过滤掉 IPv4(A) ，只返回 IPv6 DNS 域名记录"
 
 msgid "Minimum TTL to send to clients"
 msgstr "客户端缓存的最小 DNS TTL"
@@ -1413,6 +1407,9 @@ msgstr "主机到期超时"
 
 msgid "Host-<abbr title=\"Internet Protocol Address\">IP</abbr> or Network"
 msgstr "主机 <abbr title=\"Internet Protocol Address\">IP</abbr> 或网络"
+
+msgid "Host-Uniq tag content"
+msgstr "Host-Uniq 标签内容"
 
 msgid "Hostname"
 msgstr "主机名"
@@ -2617,6 +2614,9 @@ msgstr "Radius 认证密钥"
 
 msgid "Radius-Authentication-Server"
 msgstr "Radius 认证服务器"
+
+msgid "Raw hex-encoded bytes. Leave empty unless your ISP require this"
+msgstr "原始 16 进制编码的字节。除非您的运营商要求，否则请留空"
 
 msgid ""
 "Read <code>/etc/ethers</code> to configure the <abbr title=\"Dynamic Host "
@@ -3882,7 +3882,7 @@ msgid "overlay"
 msgstr "覆盖"
 
 msgid "random"
-msgstr ""
+msgstr "随机"
 
 msgid "relay mode"
 msgstr "中继模式"
@@ -4118,6 +4118,11 @@ msgstr "已标记"
 msgid "untagged"
 msgstr "未标记"
 
-msgid "Logo"
-msgstr "图标"
+msgid "Compatible Mode"
+msgstr "兼容模式"
 
+msgid "High Performing Mode"
+msgstr "高性能模式"
+
+msgid "Target Platform"
+msgstr "目标平台"
